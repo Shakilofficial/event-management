@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "image": "https://i.ibb.co/Pg43B2C/team1.jpg",
+    "name": "Sarah Johnson",
+    "designation": "Event Planner",
+    "description": "Sarah is a seasoned event planner with a passion for creating unforgettable experiences. She specializes in corporate events and has a knack for turning ideas into reality."
+  },
+  {
+    "id": 202,
+    "image": "https://i.ibb.co/5nQRsND/team2.jpg",
+    "name": "Mark Davis",
+    "designation": "Event Organizer",
+    "description": "Mark is a detail-oriented event organizer known for his impeccable organizational skills. He has a talent for handling large-scale events, ensuring everything runs smoothly."
+  },
+  {
+    "id": 303,
+    "image": "https://i.ibb.co/7C4wp1y/team3.jpg",
+    "name": "Emily Smith",
+    "designation": "Event Manager",
+    "description": "Emily is a dedicated event manager who excels in coordinating various aspects of events, from logistics to budgeting. Her ability to keep calm under pressure makes her a go-to expert in her field."
+  }
+]

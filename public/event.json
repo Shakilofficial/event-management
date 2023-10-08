@@ -1,0 +1,56 @@
+[
+  {
+    id: 1,
+    title: "Wedding Celebration",
+    img: "https://i.ibb.co/MkKrkYj/wedding.jpg", 
+    description: "A beautiful wedding celebration with family and friends. The wedding ceremony will take place at a picturesque outdoor venue, surrounded by lush gardens and a serene lake. Guests will be treated to an exquisite five-course meal, live music, and a dance floor under the stars. Join us in celebrating this special day filled with love, laughter, and unforgettable moments. Dress code: Formal attire.",
+    price: 2000,
+    availableDate: "2023-12-20", 
+    attendance: 100
+  },
+  {
+    id: 2,
+    title: "Birthday Party",
+    img: "https://i.ibb.co/3p4MKD4/birthday.jpg",
+    description: "A fun-filled birthday party with cake and games. It's time to blow out the candles and make a wish! Join us for a fantastic birthday celebration with family and friends. We'll have a delicious birthday cake, exciting games, and lots of surprises. Don't forget to bring your party spirit and a big smile. Let's make this birthday unforgettable!",
+    price: 500,
+    availableDate: "2023-011-15",
+    attendance: 50
+  },
+  {
+    id: 3,
+    title: "Anniversary Celebration",
+    img: "https://i.ibb.co/TK3PHgd/anniversary.jpg",
+    description: "Celebrate love and commitment at our romantic anniversary celebration. This special evening will include a candlelit dinner for two, accompanied by live music and a breathtaking view of the city skyline. Whether you're celebrating your own anniversary or joining us to mark a significant milestone in the lives of loved ones, this event promises an unforgettable experience filled with warmth and affection.",
+    price: 800,
+    availableDate: "2023-10-10",
+    attendance: 30
+  },
+  {
+    id: 4,
+    title: "Engagement Party",
+    img: "https://i.ibb.co/h93NRV7/engagement.jpg",
+    description: "Join us for a joyful engagement party as we celebrate the love and commitment of [Couple's Names]. This special occasion will feature a champagne toast, hors d'oeuvres, and live music. Witness the exchange of engagement rings and share in the happiness of this momentous event. Dress code: Cocktail attire.",
+    price: 300,
+    availableDate: "2023-10-25",
+    attendance: 60
+  },
+  {
+    id: 5,
+    title: "Retirement Party",
+    img: "https://i.ibb.co/XZ27NQq/retirement.jpg",
+    description: "It's time to bid farewell to a dear colleague who has dedicated [number of years] to our organization. Join us for a heartfelt retirement party as we honor their remarkable career. The evening will include speeches, a retirement cake, and a gift presentation. Let's celebrate the achievements and wish [Colleague's Name] a well-deserved retirement filled with relaxation and new adventures.",
+    price: 400,
+    availableDate: "2023-11-05",
+    attendance: 40
+  },
+  {
+    id: 6,
+    title: "Baby Shower",
+    img: "https://i.ibb.co/BqdnPtH/baby-shower.jpg",
+    description: "Welcome the newest addition to our family with a joyous baby shower. This event is all about celebrating the soon-to-arrive bundle of joy! Join us for games, laughter, and delicious treats. We'll also have a gift-opening session where you can share your love and best wishes for the baby and parents. Don't forget to bring a baby-themed gift!",
+    price: 300,
+    availableDate: "2023-10-15",
+    attendance: 20
+  }
+]
