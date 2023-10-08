@@ -1,9 +1,9 @@
-import Navbar from "../../components/Navbar/Navbar";
+import React from 'react';
 
 const Gallery = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            
         </div>
     );
 };
