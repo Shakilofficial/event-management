@@ -5,7 +5,7 @@ import img4 from "../../assets/images/gallery4.jpg";
 import img5 from "../../assets/images/gallery5.jpg";
 import img6 from "../../assets/images/gallery6.jpg";
 
-const Gallery = () => {
+const PhotoGallery = () => {
   return (
     <div className="my-24 text-center">
       <h3 className="text-cyan-500 text-5xl font-bold mb-8">Gallery</h3>
@@ -42,4 +42,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default PhotoGallery;

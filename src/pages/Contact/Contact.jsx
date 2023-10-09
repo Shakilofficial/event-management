@@ -1,10 +1,8 @@
-import Navbar from "../../components/Navbar/Navbar";
-
+import error from '../../assets/images/404.jpg'
 const Contact = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <h2 className="text-xl">Contact Us</h2>
+        <div className='my-5 flex justify-center items-center'>
+            <img className='max-h-screen' src={error} alt="" />
         </div>
     );
 };

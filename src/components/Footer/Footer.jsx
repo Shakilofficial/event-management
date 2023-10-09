@@ -2,7 +2,7 @@ import logo from "../../assets/images/Logo Of CB.png";
 const Footer = () => {
   return (
     <div className="mt-12 px-4">
-      <footer className="footer footer-center bg-[#06b6d4]  rounded-sm">
+      <footer className="footer footer-center bg-[#06b6d4] py-4 rounded-sm">
         <aside>
           <img src={logo} className="h-32 w-32" alt="" />
           <p className="text-xl font-bold">CrispBerry Events Co.</p>

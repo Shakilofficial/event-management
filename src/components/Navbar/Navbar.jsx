@@ -1,6 +1,24 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/logo.png";
+import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logOut()
+    .then((result) => {
+      console.log(result.user);
+      toast("Log Out Successfully");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  };
+
   const navLinks = (
     <>
       <li className="mr-2 text-md md:text-lg font-semibold">
@@ -47,18 +65,43 @@ const Navbar = () => {
         </div>
         <img className="h-20 w-20" src={logo} alt="" />
         <span>
-          <a className="text-lg md:text-xl font-bold">CrispBerry Events</a>
+          <a className="text-lg md:text-xl font-bold">CrispBerry</a>
         </span>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks} </ul>
       </div>
       <div className="navbar-end">
-        <img className="h-1o w-10 mr-1" src="" alt="" />
-        <Link to="/login"><button className="px-4 py-2 bg-[#01a0b1] rounded-lg font-semibold text-lg text-white">
-          Login
-        </button></Link>
+        <div>
+          {user && user.photoURL && (
+            <img
+              src={user.photoURL}
+              alt="Profile"
+              title={user.displayName}
+              style={{
+                width: "30px",
+                height: "30px",
+                borderRadius: "50%",
+              }}
+            />
+          )}
+        </div>
+        {user ? (
+          <button
+            onClick={handleSignOut}
+            className="px-4 py-2 bg-[#01a0b1] rounded-lg font-semibold text-lg text-white"
+          >
+            Sign Out
+          </button>
+        ) : (
+          <Link to="/login">
+            <button className="px-4 py-2 bg-[#01a0b1] rounded-lg font-semibold text-lg text-white">
+              Sign In
+            </button>
+          </Link>
+        )}
       </div>
+      <ToastContainer />
     </div>
   );
 };

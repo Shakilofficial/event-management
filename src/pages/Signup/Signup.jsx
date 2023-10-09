@@ -1,21 +1,42 @@
 import { Link } from "react-router-dom";
-import signUp_photo from '../../assets/images/Signup.png'
+import signUp_photo from "../../assets/images/Signup.png";
 import Navbar from "../../components/Navbar/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Signup = () => {
-    return (
+  const { createUser } = useContext(AuthContext);
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget);
+    const form = new FormData(e.currentTarget);
+
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  return (
+    <div>
+      <div className="px-4 w-full mx-auto my-2 flex flex-col md:flex-row gap-4 justify-center items-center">
         <div>
-            <Navbar></Navbar>
-            <div className="px-4 w-full mx-auto my-2 flex flex-col md:flex-row gap-4 justify-center items-center">
-              <div>
-                  <img className="w-full md:w-[400px]" src={signUp_photo} alt="" />
-              </div>
+          <img className="w-full md:w-[400px]" src={signUp_photo} alt="" />
+        </div>
         <div className="px-10 py-6 shadow-lg">
           <h2 className="text-4xl rounded-md text-center font-semibold mb-16">
             Register your account
           </h2>
           <hr />
-          <form className="my-6">
+          <form onSubmit={handleSignUp} className="my-6">
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-lg font-semibold">
@@ -70,8 +91,8 @@ const Signup = () => {
           </p>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Signup;

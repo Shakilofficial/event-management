@@ -1,11 +1,11 @@
-import React from 'react';
+import PhotoGallery from "../../components/Gallery/PhotoGallery";
 
 const Gallery = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <div className="px-4">
+      <PhotoGallery></PhotoGallery>
+    </div>
+  );
 };
 
 export default Gallery;
