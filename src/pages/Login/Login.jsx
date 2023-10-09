@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import login_banner from "../../assets/images/Login.png";
-import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import login_banner from "../../assets/images/Login.png";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
   const { signIn, googleSingIn } = useContext(AuthContext);

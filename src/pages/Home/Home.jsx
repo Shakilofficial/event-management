@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
-import Team from "../../components/Team/Team";
 import PhotoGallery from "../../components/Gallery/PhotoGallery";
+import Team from "../../components/Team/Team";
 import Service from "../Service/Service";
 
 const Home = () => {
