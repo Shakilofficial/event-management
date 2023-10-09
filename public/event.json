@@ -30,7 +30,7 @@
     "id": 4,
     "title": "Engagement Party",
     "img": "https://i.ibb.co/h93NRV7/engagement.jpg",
-    "description": "Join us for a joyful engagement party as we celebrate the love and commitment of [Couple's Names]. This special occasion will feature a champagne toast, hors d'oeuvres, and live music. Witness the exchange of engagement rings and share in the happiness of this momentous event. Dress code: Cocktail attire.",
+    "description": "Join us for a joyful engagement party as we celebrate the love and commitment of them. This special occasion will feature a champagne toast, hors d'oeuvres, and live music. Witness the exchange of engagement rings and share in the happiness of this momentous event. Dress code: Cocktail attire.",
     "price": 300,
     "availableDate": "2023-10-25",
     "attendance": 60
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "Retirement Party",
     "img": "https://i.ibb.co/XZ27NQq/retirement.jpg",
-    "description": "It's time to bid farewell to a dear colleague who has dedicated [number of years] to our organization. Join us for a heartfelt retirement party as we honor their remarkable career. The evening will include speeches, a retirement cake, and a gift presentation. Let's celebrate the achievements.",
+    "description": "It's time to bid farewell to a dear colleague who has dedicated 10 years to our organization. Join us for a heartfelt retirement party as we honor their remarkable career. The evening will include speeches, a retirement cake, and a gift presentation. Let's celebrate the achievements.",
     "price": 400,
     "availableDate": "2023-11-05",
     "attendance": 40
