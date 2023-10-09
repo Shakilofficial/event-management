@@ -10,13 +10,13 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     logOut()
-    .then((result) => {
-      console.log(result.user);
-      toast("Log Out Successfully");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+      .then((result) => {
+        console.log(result.user);
+        toast("Log Out Successfully");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const navLinks = (
@@ -72,15 +72,15 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks} </ul>
       </div>
       <div className="navbar-end">
-        <div>
+        <div className="mr-2">
           {user && user.photoURL && (
             <img
               src={user.photoURL}
               alt="Profile"
               title={user.displayName}
               style={{
-                width: "30px",
-                height: "30px",
+                width: "40px",
+                height: "40px",
                 borderRadius: "50%",
               }}
             />

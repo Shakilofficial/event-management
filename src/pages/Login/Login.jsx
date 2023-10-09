@@ -1,6 +1,6 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import login_banner from "../../assets/images/Login.png";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,31 +8,37 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { signIn, googleSingIn } = useContext(AuthContext);
+  const [error, setError] = useState(null);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
+
     signIn(email, password)
       .then((result) => {
-        console.log(result.user);
-        toast("Login success");
+        toast("Login Successfully");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        console.error(error);
+        setError(error);
+        toast("Invalid email or password");
       });
   };
 
   const handleGoogleSingIn = () => {
     googleSingIn()
       .then((result) => {
-        const loggedUser = result.user;
-        console.log(loggedUser);
-        toast("Login success");
+        toast("Login successfully");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        console.error(error)
+        setError(error);
+        toast("Error with Google Sign-In");
       });
   };
 
@@ -97,6 +103,7 @@ const Login = () => {
                 Sign In With
                 <FaGoogle />
               </button>
+              {error && <p className="">{error}</p>}
             </div>
             <p className="text-center font-semibold text-lg">
               Do not Have An Account?

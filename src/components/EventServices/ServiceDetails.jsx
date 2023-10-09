@@ -15,7 +15,7 @@ const ServiceDetails = () => {
         <h2 className="text-center text-5xl font-bold text-rose-500">
           {title}
         </h2>
-        <img className="border border-rose-300" src={img} alt="" />
+        <img className="w-auto mx-auto lg:w-[1100px]  border-4 border-rose-300" src={img} alt="" />
         <div className="p-4">
           <p className="text-lg font-extralight mt-2">{description}</p>
         </div>
