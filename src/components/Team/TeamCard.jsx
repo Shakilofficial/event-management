@@ -1,11 +1,11 @@
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const TeamCard = ({ team }) => {
     const { name, image, designation, description } = team;
   return (
     <div>
-      <div className="h-[480px] shadow-md rounded-md border-2 border-r-cyan-300 p-8 space-y-2 text-center hover:bg-cyan-50">
+      <div className="h-[480px] w-[380px] shadow-md rounded-md border-2 border-r-cyan-300 p-8 space-y-2 text-center hover:bg-cyan-50">
         <div className="flex justify-center items-center mb-8">
           <img className="h-24 w-24 rounded-full" src={image} alt="" />
         </div>

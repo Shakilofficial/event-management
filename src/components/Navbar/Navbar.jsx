@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo.png'
 const Navbar = () => {
   const navLinks = (
     <>
-      <li className="mr-2 text-lg font-semibold">
+      <li className="mr-2 text-md md:text-lg font-semibold">
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="mr-2 text-lg font-semibold">
@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <img className="h-20 w-20" src={logo} alt="" />
         <span>
-          <a className="text-xl font-bold">CrispBerry Events</a>
+          <a className="text-lg md:text-xl font-bold">CrispBerry Events</a>
         </span>
       </div>
       <div className="navbar-center hidden lg:flex">
