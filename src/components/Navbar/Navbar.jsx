@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
-import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "../../assets/images/logo.png";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -86,6 +86,7 @@ const Navbar = () => {
             />
           )}
         </div>
+        <div>{user ? <p className="px-2">{user.displayName}</p> : ""}</div>
         {user ? (
           <button
             onClick={handleSignOut}
