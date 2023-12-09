@@ -1,4 +1,4 @@
-##Features:
+## Features:
 
 -Secure Authentication:
 Email and password-based authentication ensures secure access to private routes.
