@@ -1,4 +1,5 @@
-#Features
+##Features:
+
 -Secure Authentication:
 Email and password-based authentication ensures secure access to private routes.
 Error displays on the registration page help users meet password criteria.
